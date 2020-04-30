@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingIt", "PingIt.csproj", "{602B60AE-A94E-474D-A42C-2B2F92FD2900}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{602B60AE-A94E-474D-A42C-2B2F92FD2900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{602B60AE-A94E-474D-A42C-2B2F92FD2900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{602B60AE-A94E-474D-A42C-2B2F92FD2900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{602B60AE-A94E-474D-A42C-2B2F92FD2900}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2673835-32C4-4F9E-BE30-639636A14705}
+	EndGlobalSection
+EndGlobal
