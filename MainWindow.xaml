@@ -7,6 +7,30 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left" Margin="28,16,0,0" TextWrapping="Wrap" Text="Select IP Version:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="28,37,0,0" TextWrapping="Wrap" Text="Enter IP Address to Pin:" VerticalAlignment="Top"/>
+        <RadioButton x:Name="ipv4" IsChecked="True" Content="IPv4" HorizontalAlignment="Left" Margin="136,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.492,0.262" GroupName="version" Checked="ipv4_Checked"/>
+        <RadioButton x:Name="ipv6" Content="IPv6" HorizontalAlignment="Left" Margin="182,16,0,0" VerticalAlignment="Top" GroupName="version" Checked="ipv6_Checked"/>
+        <TextBox x:Name="ipaddress" HorizontalAlignment="Left" Height="23" Margin="163,36,0,0" TextWrapping="Wrap" Text="192.168.2.1" VerticalAlignment="Top" Width="240"/>
+        <Button x:Name="ping" Content="Ping It" HorizontalAlignment="Left" Margin="10,389,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <RichTextBox HorizontalAlignment="Left" Height="293" Margin="10,91,0,0" VerticalAlignment="Top" Width="772"
+                     x:Name="outputBox"
+                     VerticalScrollBarVisibility="Visible" 
+                     HorizontalScrollBarVisibility="Visible" 
+                     IsReadOnly="True">
+            <FlowDocument/>
+        </RichTextBox>
+        <CheckBox x:Name="continuous" Content="Continuous" HorizontalAlignment="Left" Margin="28,64,0,0" VerticalAlignment="Top" Checked="continuous_Checked" Unchecked="continuous_Unchecked"/>
+        <RadioButton x:Name="_10ms" Content="10ms" HorizontalAlignment="Left" Margin="138,64,0,0" VerticalAlignment="Top" GroupName="rate" IsEnabled="False"/>
+        <RadioButton x:Name="_100ms" Content="100ms" HorizontalAlignment="Left" Margin="196,64,0,0" VerticalAlignment="Top" GroupName="rate" IsEnabled="False"/>
+        <RadioButton x:Name="_1000ms" Content="1000ms" HorizontalAlignment="Left" Margin="262,64,0,0" VerticalAlignment="Top" GroupName="rate" IsChecked="True" IsEnabled="False"/>
+        <Button x:Name="stop" Content="Stop" HorizontalAlignment="Left" Margin="707,389,0,0" VerticalAlignment="Top" Width="75" Click="stop_clicked" IsEnabled="False"/>
+        <CheckBox Content="Random Data" HorizontalAlignment="Left" Margin="431,42,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        <TextBox x:Name="data" HorizontalAlignment="Left" Height="23" Margin="463,14,0,0" TextWrapping="Wrap" Text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" VerticalAlignment="Top" Width="205"/>
+        <TextBlock HorizontalAlignment="Left" Margin="431,16,0,0" TextWrapping="Wrap" Text="Data:" VerticalAlignment="Top" RenderTransformOrigin="-0.751,-0.299"/>
+        <RadioButton x:Name="_32char" Content="32char" HorizontalAlignment="Left" Margin="544,44,0,0" VerticalAlignment="Top" GroupName="data_size" IsChecked="True" IsEnabled="False"/>
+        <RadioButton x:Name="_64char" Content="64char" HorizontalAlignment="Left" Margin="610,44,0,0" VerticalAlignment="Top" GroupName="data_size" IsEnabled="False" Checked="_64char_Checked"/>
+        <RadioButton x:Name="mtu" Content="MTU" HorizontalAlignment="Left" Margin="675,44,0,0" VerticalAlignment="Top" GroupName="data_size" IsEnabled="False" Checked="mtu_Checked"/>
+
     </Grid>
 </Window>
