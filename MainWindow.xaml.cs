@@ -97,6 +97,13 @@ namespace PingIt
         public MainWindow()
         {
             InitializeComponent();
+            this.Loaded += new RoutedEventHandler(Window_Loaded);
+        }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            var desktopWorkingArea = System.Windows.SystemParameters.WorkArea;
+            this.Left = desktopWorkingArea.Right - this.Width;
+            this.Top = desktopWorkingArea.Bottom - this.Height;
         }
 
         private static Random random = new Random();

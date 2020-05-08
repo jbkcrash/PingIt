@@ -5,7 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PingIt"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="PingIt" Height="450" Width="800"
+        WindowStyle="None"
+        AllowsTransparency="True" >
+    <Window.Background>
+        <SolidColorBrush Color="White" Opacity="0.5"/>
+    </Window.Background>
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="28,16,0,0" TextWrapping="Wrap" Text="Select IP Version:" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="28,37,0,0" TextWrapping="Wrap" Text="Enter IP Address to Pin:" VerticalAlignment="Top"/>
@@ -30,7 +35,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="431,16,0,0" TextWrapping="Wrap" Text="Data:" VerticalAlignment="Top" RenderTransformOrigin="-0.751,-0.299"/>
         <RadioButton x:Name="_32char" Content="32char" HorizontalAlignment="Left" Margin="544,44,0,0" VerticalAlignment="Top" GroupName="data_size" IsChecked="True" IsEnabled="False"/>
         <RadioButton x:Name="_64char" Content="64char" HorizontalAlignment="Left" Margin="610,44,0,0" VerticalAlignment="Top" GroupName="data_size" IsEnabled="False" Checked="_64char_Checked"/>
-        <RadioButton x:Name="mtu" Content="MTU" HorizontalAlignment="Left" Margin="675,44,0,0" VerticalAlignment="Top" GroupName="data_size" IsEnabled="False" Checked="mtu_Checked"/>
+        <RadioButton x:Name="mtu" Content="~MTU" HorizontalAlignment="Left" Margin="675,44,0,0" VerticalAlignment="Top" GroupName="data_size" IsEnabled="False" Checked="mtu_Checked"/>
 
     </Grid>
 </Window>
