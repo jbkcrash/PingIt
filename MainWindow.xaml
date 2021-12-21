@@ -7,13 +7,14 @@
         mc:Ignorable="d"
         Title="PingIt" Height="450" Width="800"
         WindowStyle="None"
-        AllowsTransparency="True" >
+        AllowsTransparency="True" 
+        ShowInTaskbar="False" >
     <Window.Background>
         <SolidColorBrush Color="White" Opacity="0.5"/>
     </Window.Background>
-    <Grid>
+    <Grid Name="mainGrid">
         <TextBlock HorizontalAlignment="Left" Margin="28,16,0,0" TextWrapping="Wrap" Text="Select IP Version:" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="28,37,0,0" TextWrapping="Wrap" Text="Enter IP Address to Pin:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="28,37,0,0" TextWrapping="Wrap" Text="Enter IP Address to Ping:" VerticalAlignment="Top"/>
         <RadioButton x:Name="ipv4" IsChecked="True" Content="IPv4" HorizontalAlignment="Left" Margin="136,16,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.492,0.262" GroupName="version" Checked="ipv4_Checked"/>
         <RadioButton x:Name="ipv6" Content="IPv6" HorizontalAlignment="Left" Margin="182,16,0,0" VerticalAlignment="Top" GroupName="version" Checked="ipv6_Checked"/>
         <TextBox x:Name="ipaddress" HorizontalAlignment="Left" Height="23" Margin="163,36,0,0" TextWrapping="Wrap" Text="192.168.2.1" VerticalAlignment="Top" Width="240"/>
@@ -36,6 +37,8 @@
         <RadioButton x:Name="_32char" Content="32char" HorizontalAlignment="Left" Margin="544,44,0,0" VerticalAlignment="Top" GroupName="data_size" IsChecked="True" IsEnabled="False"/>
         <RadioButton x:Name="_64char" Content="64char" HorizontalAlignment="Left" Margin="610,44,0,0" VerticalAlignment="Top" GroupName="data_size" IsEnabled="False" Checked="_64char_Checked"/>
         <RadioButton x:Name="mtu" Content="~MTU" HorizontalAlignment="Left" Margin="675,44,0,0" VerticalAlignment="Top" GroupName="data_size" IsEnabled="False" Checked="mtu_Checked"/>
+        <Button Content="Minimize" HorizontalAlignment="Left" Margin="707,414,0,0" VerticalAlignment="Top" Width="75" Click="minimize"/>
+        <Button Content="Close" HorizontalAlignment="Left" Margin="627,414,0,0" VerticalAlignment="Top" Width="75" Click="closeWindow"/>
 
     </Grid>
 </Window>
