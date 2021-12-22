@@ -1,6 +1,6 @@
 # PingIt
 
-This is a small application it is intended to give a robust desktop experience for ICMP echo. 
+This is a small application it is intended to give a robust desktop experience for ICMP echo. The project is created in Visual Studio 2019.
 
 The ultimate goal is to make an application that isn't intrusive, but always visible, and still allow a direct and robust control over sending IPV4 and IPV6 pings. Recording the results of responses to visualize a "quality" thereof.
 
