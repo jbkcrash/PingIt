@@ -48,5 +48,5 @@ I also started on drawing a simple meter over the console, one that will display
 
 ### Buttons
 
-Buttons should be pretty intuitive, the minimize will put the application in the system tray with a generic icon. In the future I want to make this icon reflect some of the status of the meter for example, or it could be a pause icon when not pinging, turn red when threshold is hit. Many possibilities.
+Buttons should be pretty intuitive, the minimize will put the application in the system tray with a generic icon. Doubleclick this systemtray icon to bring the application back to "normal". In the future I want to make this icon reflect some of the status of the meter for example, it could be a pause icon when not pinging, turn red when threshold is hit. Many possibilities.
 
